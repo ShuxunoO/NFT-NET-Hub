@@ -2,7 +2,7 @@
 
 ## <div align="center">NFT-NET-HUB: Comprehensive Management Tool for NFT-HUB Dataset</div>
 
-[![Static Badge](https://img.shields.io/badge/%F0%9F%A4%97%20Huggingface-NFT%20NET-orange?style=flat&logoColor=%23FFD21E)](https://huggingface.co/datasets/shuxunoo/NFT-Net)[![Static Badge](https://img.shields.io/badge/arXiv-2402.16872%20-B31B1B?style=flat&logo=arxiv&link=https%3A%2F%2Farxiv.org%2Fabs%2F2402.16872)](https://arxiv.org/abs/2402.16872)[![Open issue](https://img.shields.io/github/issues/ShuxunoO/NFT-NET-Hub)](https://github.com/chencn2020/PromptIQA/issues)[![Closed issue](https://img.shields.io/github/issues-closed/chencn2020/PromptIQA)](https://github.com/ShuxunoO/NFT-NET-Hub/issues)
+[![Static Badge](https://img.shields.io/badge/%F0%9F%A4%97%20Huggingface-NFT%20NET-orange?style=flat&logoColor=%23FFD21E)](https://huggingface.co/datasets/shuxunoo/NFT-Net)[![Static Badge](https://img.shields.io/badge/arXiv-2402.16872%20-B31B1B?style=flat&logo=arxiv&link=https%3A%2F%2Farxiv.org%2Fabs%2F2402.16872)](https://arxiv.org/abs/2402.16872)[![Open issue](https://img.shields.io/github/issues/ShuxunoO/NFT-NET-Hub)](https://github.com/ShuxunoO/NFT-NET-Hub/issues)[![Closed issue](https://img.shields.io/github/issues-closed/ShuxunoO/NFT-NET-Hub)](https://github.com/ShuxunoO/NFT-NET-Hub/issues)
 
 
 
