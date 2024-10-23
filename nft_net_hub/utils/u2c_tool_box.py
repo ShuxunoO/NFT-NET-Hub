@@ -4,6 +4,12 @@ import os
 
 class Up2Cloud:
     def __init__(self, user_access_key, repo_id, repo_type):
+        """
+        Args:
+            user_access_key (str): The user access key(read only)
+            repo_id (str): The repo ID
+            repo_type (str): The repo type
+        """
         self.user_access_key = user_access_key
         self.repo_id = repo_id
         self.repo_type = repo_type
@@ -12,8 +18,15 @@ class Up2Cloud:
 
     # 上传文件到huggingface
     def up2Huggingface_file(self,local_file_path, cloud_file_path):
+        """
+        upload a file to huggingface repo
+
+        Args:
+            local_file_path (str): The path of the file to be uploaded
+            cloud_file_path (str): The path of the file in the cloud
+        """
         api = HfApi()
-        # 上传 zip 文件到 Huggingface 数据集
+        
         api.upload_file(
             path_or_fileobj=local_file_path,  # zip 文件的路径
             path_in_repo=cloud_file_path,  # 在数据集中的路径
@@ -22,6 +35,13 @@ class Up2Cloud:
         )
     # 上传文件夹到huggingface
     def up2Huggingface_folder(self,local_folder_path, cloud_folder_path):
+        """
+        upload a folder to huggingface repo
+
+        Args:
+            local_folder_path (str): The path of the folder to be uploaded
+            cloud_folder_path (str): The path of the folder in the cloud
+        """
         api = HfApi()
         # 上传 zip 文件到 Huggingface 数据集
         api.upload_folder(
@@ -33,7 +53,13 @@ class Up2Cloud:
 
     # 从huggingface下载指定文件
     def download_from_huggingface(self, cloud_file_path, local_file_path):
-        # 使用 hf_hub_download 来下载文件
+        """
+        download a file from huggingface repo
+
+        Args:
+            cloud_file_path (str): The path of the file in the cloud
+            local_file_path (str): The path of the file to be downloaded
+        """
         file_path = hf_hub_download(
             repo_id=self.repo_id,
             filename=cloud_file_path,

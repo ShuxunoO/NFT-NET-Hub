@@ -8,10 +8,10 @@ class IOBox:
     @staticmethod
     def check_dir(dir_path):
         """
-        检查文件夹路径是否存在，不存在则创建
+        check if the directory exists, if not, create it
 
         Args:
-            dir_path (str): 待检查的文件夹路径
+            dir_path (str): The path to the directory
         """
         dir_path = Path(dir_path)
 
@@ -24,10 +24,10 @@ class IOBox:
     @staticmethod
     def load_json(json_path):
         """
-        以只读的方式打开json文件
+        Loads a json file from the given path
 
         Args:
-            config_path: json文件路径
+            config_path: The path to the json file
 
         Returns:
             A dictionary
