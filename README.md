@@ -47,10 +47,10 @@ Clone the Github repository.
 
 Install the requirements.
        
-    ```bash
-    cd NFT-NET-Hub
-    pip install -r requirements.txt
-    ```
+ ```bash
+ cd NFT-NET-Hub
+ pip install -r requirements.txt
+ ```
 
 
 
