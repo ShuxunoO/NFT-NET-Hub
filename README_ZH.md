@@ -1,68 +1,63 @@
 ![NFT1000](assets/NFT_NET_HUB.png)
 
-## <div align="center">NFT-NET-HUB: Comprehensive Management Tool for NFT-HUB Dataset</div>
-
+## <div align="center">NFT-NET-HUB: NFT-HUB 数据集的综合管理工具</div>
 
 [![Static Badge](https://img.shields.io/badge/%F0%9F%A4%97%20Huggingface-NFT%20NET-orange?style=flat&logoColor=%23FFD21E)](https://huggingface.co/datasets/shuxunoo/NFT-Net)[![Static Badge](https://img.shields.io/badge/arXiv-2402.16872%20-B31B1B?style=flat&logo=arxiv&link=https%3A%2F%2Farxiv.org%2Fabs%2F2402.16872)](https://arxiv.org/abs/2402.16872)[![Open issue](https://img.shields.io/github/issues/ShuxunoO/NFT-NET-Hub)](https://github.com/ShuxunoO/NFT-NET-Hub/issues)[![Closed issue](https://img.shields.io/github/issues-closed/ShuxunoO/NFT-NET-Hub)](https://github.com/ShuxunoO/NFT-NET-Hub/issues)
 
-[中文版](README_ZH.md) | [English Version](README.md)
+[English Version](README.md) | [中文版](README_ZH.md)
 
 <br>
 
-## 🚀- NEWS
+## 🚀- 新闻
 
-- [2024-10-15] ⛵ Project Creation；
+- [2024-10-15] ⛵ 项目创建；
 
-- [2023-10-25] 🥳 NFT-NET-Hub for [NFT1000](https://huggingface.co/datasets/shuxunoo/NFT-Net/tree/main/NFT1000) released! 🎉；
+- [2023-10-25] 🥳 NFT-NET-Hub for [NFT1000](https://huggingface.co/datasets/shuxunoo/NFT-Net/tree/main/NFT1000) 发布！🎉；
 
 - ……
 
 <br>
 
-## 📋︎- Introduction of NFT-NET-HUB
+## 📋︎- NFT-NET-HUB 介绍
 
-**NFT-NET-HUB** is a versatile and user-friendly package management tool specifically designed to accompany the NFT-NET dataset. It provides a highly flexible and efficient way to query, download, and manage data within NFT-NET, ensuring seamless integration and usability for developers and researchers working with NFT datasets.
+**NFT-NET-HUB** 是一个多功能且用户友好的包管理工具，专为 NFT-NET 数据集设计。它提供了一种高度灵活和高效的方式来查询、下载和管理 NFT-NET 中的数据，确保开发人员和研究人员在处理 NFT 数据集时的无缝集成和可用性。
 
-Key features of **NFT-NET-HUB** include:
+**NFT-NET-HUB** 的主要功能包括：
 
-- **Data Querying**: Effortlessly search through the NFT-NET dataset to find the data you need;
-- **Data Download**: Conveniently download NFT data in a structured format from the cloud;
-- **Data Management**: Organize, maintain, and keep track of your NFT data collections with ease;
+- **数据查询**：轻松搜索 NFT-NET 数据集以找到所需数据；
+- **数据下载**：方便地从云端以结构化格式下载 NFT 数据；
+- **数据管理**：轻松组织、维护和跟踪您的 NFT 数据集合；
 
-Whether you're exploring NFT datasets for research or development, **NFT-NET-HUB** streamlines the entire process, making it an essential tool for handling NFT data.
+无论您是为了研究还是开发而探索 NFT 数据集，**NFT-NET-HUB** 都能简化整个过程，使其成为处理 NFT 数据的必备工具。
 
 <br>
 
-## ⚙- Usage
+## ⚙- 使用方法
 
+### 1. 下载和安装
 
-
-### 1. Download and install
-
-Clone the Github repository.
+克隆 Github 仓库。
 
    ```git
    git clone https://github.com/ShuxunoO/NFT-NET-Hub.git
    ```
 
-Install the requirements.
+安装依赖。
        
-    ```bash
-    cd NFT-NET-Hub
-    pip install -r requirements.txt
-    ```
+```bash
+cd NFT-NET-Hub
+pip install -r requirements.txt
+```
 
+### 2. 下载目标 NFT 项目
 
-
-### 2. Downlaod Target NFT Projects
-
-Supports resuming from breakpoints, **please make sure you can visit Huggingface**🪜
+支持断点续传，**请确保您可以访问 Huggingface**🪜
 
 ```
 cd NFT-NET-Hub/nft_net_hub
 ```
 
-modify the download.py file to download the NFT projects you want.
+修改 `download.py` 文件以下载您想要的 NFT 项目。
 <br>
 
    ```python
@@ -70,7 +65,7 @@ modify the download.py file to download the NFT projects you want.
    from utils.downloader import NFT1000
    
    local_repo_path = "path/to/local/repo"
-   # modfiy the NFT_name_list to the NFT projects you want to download
+   # 修改 NFT_name_list 为您想要下载的 NFT 项目
    NFT_name_list = ["BoredApeYachtClub", "CRYPTOPUNKS"]
    
    NFT1000 = NFT1000("NFT1000", local_repo_path)
@@ -80,11 +75,9 @@ modify the download.py file to download the NFT projects you want.
 
    <br>
 
-   🤔 Sometime you may can't remember the NFT project name clearly ……
+   🤔 有时您可能记不清 NFT 项目的具体名称……
 
-   Don't worry, NFT-NET-HUB can give you some suggestions, such as:
-
-
+   不用担心，NFT-NET-HUB 可以给您一些建议，例如：
 
    ```python
    
@@ -98,7 +91,7 @@ modify the download.py file to download the NFT projects you want.
    
    ```
 
-   or
+   或
 
    ```python
    
@@ -112,7 +105,7 @@ modify the download.py file to download the NFT projects you want.
    
    ```
 
-   or
+   或
 
    ```python
    
@@ -127,7 +120,7 @@ modify the download.py file to download the NFT projects you want.
 
 <br>
 
-👋 If you want to download all NFT projects, just：
+👋 如果您想下载所有 NFT 项目，只需：
    ```python
    
    from utils.downloader import NFT1000
@@ -138,14 +131,13 @@ modify the download.py file to download the NFT projects you want.
    
    ```
 
-But be careful, this might take a long time, so please ensure your internet connection is stable and fast🚀
-
+但请注意，这可能需要很长时间，因此请确保您的网络连接稳定且快速🚀
 
 <br>
 
-### 3. Unzip NFT Projects
+### 3. 解压 NFT 项目
 
-The projects in the NFT1000 dataset are all stored in **.zip** format. After downloading your desired project, you can easily unzip it using the tools provided by the NFT-NET-HUB package. Here is an example of how to do this:
+NFT1000 数据集中的项目都以 **.zip** 格式存储。下载完所需项目后，您可以使用 NFT-NET-HUB 包提供的工具轻松解压。以下是如何操作的示例：
 
 ```python
 from utils.downloader import NFT1000
@@ -159,7 +151,7 @@ NFT1000.unzip(NFT_name_list)
 
 <br>
 
-👋 If you want to unzip all NFT projects, just：
+👋 如果您想解压所有 NFT 项目，只需：
 
 ```python
 
@@ -173,9 +165,9 @@ NFT1000.unzip_all()
 
 <br>
 
-### 4. Query
+### 4. 查询
 
-Query the Information of a specific NFT Project.
+查询特定 NFT 项目的信息。
 
    ```python
    
@@ -189,9 +181,7 @@ Query the Information of a specific NFT Project.
    
    ```
 
-
-
-Query the Information of a specific NFT Project.
+查询特定 NFT 项目的信息。
 
    ```python
    
@@ -205,16 +195,14 @@ Query the Information of a specific NFT Project.
    
    ```
 
-
-
-👋For more usage and requests, please submit an issue to us.
+👋如需更多使用方法和请求，请向我们提交问题。
 
 <br>
 <br>
 
-## Contributors
+## 贡献者
 
-Thank you 🙏 to all our contributors!
+感谢 🙏 所有贡献者！
 
 <a href="https://github.com/ShuxunoO/NFT-Net/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=ShuxunoO/NFT-Net" alt="NFT-NET contributors"></a>
@@ -222,15 +210,13 @@ Thank you 🙏 to all our contributors!
 <br>
 <br>
 
-## Parters
-
-
+## 合作伙伴
 
 ![Parters](assets/Parter.png)
 
 <br>
 
-## Authors and Citation
+## 作者和引用
 
    ```
 @inproceedings{
