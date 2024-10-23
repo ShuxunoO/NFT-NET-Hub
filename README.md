@@ -2,9 +2,10 @@
 
 ## <div align="center">NFT-NET-HUB: Comprehensive Management Tool for NFT-HUB Dataset</div>
 
+
 [![Static Badge](https://img.shields.io/badge/%F0%9F%A4%97%20Huggingface-NFT%20NET-orange?style=flat&logoColor=%23FFD21E)](https://huggingface.co/datasets/shuxunoo/NFT-Net)[![Static Badge](https://img.shields.io/badge/arXiv-2402.16872%20-B31B1B?style=flat&logo=arxiv&link=https%3A%2F%2Farxiv.org%2Fabs%2F2402.16872)](https://arxiv.org/abs/2402.16872)[![Open issue](https://img.shields.io/github/issues/ShuxunoO/NFT-NET-Hub)](https://github.com/ShuxunoO/NFT-NET-Hub/issues)[![Closed issue](https://img.shields.io/github/issues-closed/ShuxunoO/NFT-NET-Hub)](https://github.com/ShuxunoO/NFT-NET-Hub/issues)
 
-
+<br>
 
 ## 🚀- NEWS
 
@@ -14,7 +15,7 @@
 
 - ……
 
-
+<br>
 
 ## 📋︎- Introduction of NFT-NET-HUB
 
@@ -28,7 +29,7 @@ Key features of **NFT-NET-HUB** include:
 
 Whether you're exploring NFT datasets for research or development, **NFT-NET-HUB** streamlines the entire process, making it an essential tool for handling NFT data.
 
-
+<br>
 
 ## ⚙- Usage
 
@@ -60,6 +61,7 @@ cd NFT-NET-Hub/nft_net_hub
 ```
 
 modify the download.py file to download the NFT projects you want.
+<br>
 
    ```python
    
@@ -74,7 +76,7 @@ modify the download.py file to download the NFT projects you want.
    
    ```
 
-   
+   <br>
 
    🤔 Sometime you may can't remember the NFT project name clearly ……
 
@@ -121,7 +123,7 @@ modify the download.py file to download the NFT projects you want.
    
    ```
 
-   
+<br>
 
 👋 If you want to download all NFT projects, just：
    ```python
@@ -137,6 +139,7 @@ modify the download.py file to download the NFT projects you want.
 But be careful, this might take a long time, so please ensure your internet connection is stable and fast🚀
 
 
+<br>
 
 ### 3. Unzip NFT Projects
 
@@ -152,7 +155,7 @@ NFT_name_list = ["BoredApeYachtClub", "CRYPTOPUNKS"]
 NFT1000.unzip(NFT_name_list)
 ```
 
-
+<br>
 
 👋 If you want to unzip all NFT projects, just：
 
@@ -166,7 +169,7 @@ NFT1000.unzip_all()
 
 ```
 
-
+<br>
 
 ### 4. Query
 
@@ -204,7 +207,8 @@ Query the Information of a specific NFT Project.
 
 👋For more usage and requests, please submit an issue to us.
 
-
+<br>
+<br>
 
 ## Contributors
 
@@ -213,11 +217,8 @@ Thank you 🙏 to all our contributors!
 <a href="https://github.com/ShuxunoO/NFT-Net/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=ShuxunoO/NFT-Net" alt="NFT-NET contributors"></a>
 
-
-
-
-
-
+<br>
+<br>
 
 ## Parters
 
@@ -225,7 +226,7 @@ Thank you 🙏 to all our contributors!
 
 ![Parters](assets/Parter.png)
 
-
+<br>
 
 ## Authors and Citation
 
