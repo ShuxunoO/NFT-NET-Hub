@@ -50,9 +50,11 @@ class Downloader:
             if local_checksum == oral_checksum:
                 print(f"{NFT_name}.zip checksum pass!")
                 return True
+            else:
+                print(f"{NFT_name}.zip checksum failed!")
+                return False
+
         else:
-            print(f"{NFT_name}.zip not found!", file_path)
-            print(f"{NFT_name}.zip checksum failed!")
             return False
 
     def unzip_(self, NFT_name: str):
@@ -106,6 +108,7 @@ class NFT1000(Downloader):
 
         """
         cloud_file_path = self.cloud_dataset_name + f"/{NFT_name}.zip"
+        print("########## Start to download {NFT_name} ##########")
         self.u2c.download_from_huggingface(cloud_file_path, self.local_dataset_path)
 
 

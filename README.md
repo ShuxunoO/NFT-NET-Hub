@@ -45,13 +45,19 @@ Clone the Github repository.
    git clone https://github.com/ShuxunoO/NFT-NET-Hub.git
    ```
 
-Install the requirements.
+Install the requirements(Python >= 3.10).
        
  ```bash
  cd NFT-NET-Hub
  pip install -r requirements.txt
  ```
 
+If you use Conda, run
+```
+
+conda env create -f environment.yml
+
+```
 
 
 ### 2. Downlaod Target NFT Projects
@@ -69,7 +75,7 @@ modify the download.py file to download the NFT projects you want.
    
    from utils.downloader import NFT1000
    
-   local_repo_path = "path/to/local/repo"
+   local_repo_path = "absolute/absolute/path/to/local/repo"
    # modfiy the NFT_name_list to the NFT projects you want to download
    NFT_name_list = ["BoredApeYachtClub", "CRYPTOPUNKS"]
    
@@ -90,7 +96,7 @@ modify the download.py file to download the NFT projects you want.
    
    from utils.downloader import NFT1000
    
-   local_repo_path = "path/to/local/repo"
+   local_repo_path = "absolute/path/to/local/repo"
    NFT1000 = NFT1000("NFT1000", local_repo_path)
    NFT1000.download(["BoredApe"])
    
@@ -104,7 +110,7 @@ modify the download.py file to download the NFT projects you want.
    
    from utils.downloader import NFT1000
    
-   local_repo_path = "path/to/local/repo"
+   local_repo_path = "absolute/path/to/local/repo"
    NFT1000 = NFT1000("NFT1000", local_repo_path)
    NFT1000.query("BoredApe")
    
@@ -117,7 +123,7 @@ modify the download.py file to download the NFT projects you want.
    ```python
    
    from utils.downloader import NFT1000
-   local_repo_path = "path/to/local/repo"
+   local_repo_path = "absolute/path/to/local/repo"
    
    NFT1000 = NFT1000("NFT1000", local_repo_path)
    print(NFT1000.get_NFT_name_list())
@@ -131,7 +137,7 @@ modify the download.py file to download the NFT projects you want.
    ```python
    
    from utils.downloader import NFT1000
-   local_repo_path = "path/to/local/repo"
+   local_repo_path = "absolute/path/to/local/repo"
    
    NFT1000 = NFT1000("NFT1000", local_repo_path)
    NFT1000.download_all()
@@ -149,7 +155,7 @@ The projects in the NFT1000 dataset are all stored in **.zip** format. After dow
 
 ```python
 from utils.downloader import NFT1000
-local_repo_path = "path/to/local/repo"
+local_repo_path = "absolute/path/to/local/repo"
 NFT1000 = NFT1000("NFT1000", local_repo_path)
 
 NFT_name_list = ["BoredApeYachtClub", "CRYPTOPUNKS"]
@@ -164,7 +170,7 @@ NFT1000.unzip(NFT_name_list)
 ```python
 
 from utils.downloader import NFT1000
-local_repo_path = "path/to/local/repo"
+local_repo_path = "absolute/path/to/local/repo"
 
 NFT1000 = NFT1000("NFT1000", local_repo_path)
 NFT1000.unzip_all()
@@ -181,7 +187,7 @@ Query the Information of a specific NFT Project.
    
    from utils.downloader import NFT1000
    
-   local_repo_path = "path/to/local/repo"
+   local_repo_path = "absolute/path/to/local/repo"
    NFT1000 = NFT1000("NFT1000", local_repo_path)
    print(NFT1000.query("BoredApeYachtClub"))
    
@@ -197,7 +203,7 @@ Query the Information of a specific NFT Project.
    
    from utils.downloader import NFT1000
    
-   local_repo_path = "path/to/local/repo"
+   local_repo_path = "absolute/path/to/local/repo"
    NFT1000 = NFT1000("NFT1000", local_repo_path)
    print(NFT1000.query("validation_list"))
    

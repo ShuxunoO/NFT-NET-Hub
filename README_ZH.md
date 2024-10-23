@@ -49,6 +49,14 @@ cd NFT-NET-Hub
 pip install -r requirements.txt
 ```
 
+如果你使用 Conda, 运行
+```
+
+conda env create -f environment.yml
+
+```
+
+
 ### 2. 下载目标 NFT 项目
 
 支持断点续传，**请确保您可以访问 Huggingface**🪜
@@ -64,7 +72,7 @@ cd NFT-NET-Hub/nft_net_hub
    
    from utils.downloader import NFT1000
    
-   local_repo_path = "path/to/local/repo"
+   local_repo_path = "absolute/path/to/local/repo"
    # 修改 NFT_name_list 为您想要下载的 NFT 项目
    NFT_name_list = ["BoredApeYachtClub", "CRYPTOPUNKS"]
    
@@ -83,7 +91,7 @@ cd NFT-NET-Hub/nft_net_hub
    
    from utils.downloader import NFT1000
    
-   local_repo_path = "path/to/local/repo"
+   local_repo_path = "absolute/path/to/local/repo"
    NFT1000 = NFT1000("NFT1000", local_repo_path)
    NFT1000.download(["BoredApe"])
    
@@ -97,7 +105,7 @@ cd NFT-NET-Hub/nft_net_hub
    
    from utils.downloader import NFT1000
    
-   local_repo_path = "path/to/local/repo"
+   local_repo_path = "absolute/path/to/local/repo"
    NFT1000 = NFT1000("NFT1000", local_repo_path)
    NFT1000.query("BoredApe")
    
@@ -110,7 +118,7 @@ cd NFT-NET-Hub/nft_net_hub
    ```python
    
    from utils.downloader import NFT1000
-   local_repo_path = "path/to/local/repo"
+   local_repo_path = "absolute/path/to/local/repo"
    
    NFT1000 = NFT1000("NFT1000", local_repo_path)
    print(NFT1000.get_NFT_name_list())
@@ -124,7 +132,7 @@ cd NFT-NET-Hub/nft_net_hub
    ```python
    
    from utils.downloader import NFT1000
-   local_repo_path = "path/to/local/repo"
+   local_repo_path = "absolute/path/to/local/repo"
    
    NFT1000 = NFT1000("NFT1000", local_repo_path)
    NFT1000.download_all()
@@ -141,7 +149,7 @@ NFT1000 数据集中的项目都以 **.zip** 格式存储。下载完所需项�
 
 ```python
 from utils.downloader import NFT1000
-local_repo_path = "path/to/local/repo"
+local_repo_path = "absolute/path/to/local/repo"
 NFT1000 = NFT1000("NFT1000", local_repo_path)
 
 NFT_name_list = ["BoredApeYachtClub", "CRYPTOPUNKS"]
@@ -156,7 +164,7 @@ NFT1000.unzip(NFT_name_list)
 ```python
 
 from utils.downloader import NFT1000
-local_repo_path = "path/to/local/repo"
+local_repo_path = "absolute/path/to/local/repo"
 
 NFT1000 = NFT1000("NFT1000", local_repo_path)
 NFT1000.unzip_all()
@@ -173,7 +181,7 @@ NFT1000.unzip_all()
    
    from utils.downloader import NFT1000
    
-   local_repo_path = "path/to/local/repo"
+   local_repo_path = "absolute/path/to/local/repo"
    NFT1000 = NFT1000("NFT1000", local_repo_path)
    print(NFT1000.query("BoredApeYachtClub"))
    
@@ -187,7 +195,7 @@ NFT1000.unzip_all()
    
    from utils.downloader import NFT1000
    
-   local_repo_path = "path/to/local/repo"
+   local_repo_path = "absolute/path/to/local/repo"
    NFT1000 = NFT1000("NFT1000", local_repo_path)
    print(NFT1000.query("validation_list"))
    
